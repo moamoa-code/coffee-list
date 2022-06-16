@@ -1,0 +1,14 @@
+
+span {
+  display: inline-block;
+  margin: 10px;
+  width: 33px;
+  height: 33px;
+  line-height: 33px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  font-weight: bold;
+  color:white;
+  background-color: #3ca3ee;
+}

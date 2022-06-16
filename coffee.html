@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="coffee.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="setting">
+          <h1>에뜨왈 상품페이지 생성기</h1>
+          <h2>화면 세팅</h2>
+          <button type="button" onclick="button_yeca_clicked()">예카용 프리셋</button>
+          <button type="button" onclick="button_list1_clicked()">리스트1</button>
+          <button type="button" onclick="button_list2_clicked()">리스트2(예카)</button>
+          <span>화면크기</span>
+          <button class="button_780px" type="button" onclick="button_780px_clicked()">780px</button>
+          <button type="button" onclick="button_900px_clicked()">900px</button>
+          <p></p>
+          <button type="button" onclick="button_price_clicked()">가격표시</button>
+          <br>
+          <h2>스크린샷 (애니메이션 끄고 이용)</h2>            
+          <button type="button" onclick="button_animation_clicked()">애니메이션 끄기</button>
+          <p></p>
+          <button onclick="bodyShot('body')">전체 스크린샷</button>
+          <span>예카용 영역</span>
+          <button onclick="bodyShot('yeca')">예카영역 스크린샷</button>
+          <button onclick="bodyShot('yeca_400g')">예카-400g</button>
+          <button onclick="bodyShot('yeca_1kg')">예카-1kg</button>
+          <span>부분 스크린샷</span>
+          <button onclick="bodyShot('blend')">블랜딩</button>
+          <button onclick="bodyShot('single')">싱글</button>
+          <button onclick="bodyShot('special')">스페셜티</button>
+          <p></p>
+          <button type="button" onclick="button_hide_clicked()">세팅창 숨기기</button>
+          <BR>            
+        </div>
+        <div class="image_view">
+            <div class="container">
+                
+            </div>
+            
+        </div>
+        <div class="capture_area">
+            <div class="banner_blend">
+                <h1>에뜨왈의 100% 아라비카 블랜드 커피</h1>
+                <h3>전국의 다양한 프렌차이즈,인디펜던트 카페에서 애용하는 에뜨왈 커피.<br>
+                트렌드 변화에 맞춰 바리스타들과의 끊임없는 협업과 니즈파악으로 완성된<br>
+                다양한 뉘앙스를 가진 에뜨왈 블랜드 커피를 즐겨보세요.
+                </h3>
+            </div>
+
+            <div class="coffee_list">
+                
+                
+            </div>
+
+            <div class="banner_single up-on-scroll">
+                <H1>에뜨왈 싱글오리진 커피</H1>
+                <p>각 산지별 원두가 가진 매력을 최대로 끌어올린<br>
+                    에뜨왈만의 최적화 로스팅.<br>
+                    핸드드립 또는 가정용 에스프레소 머신으로도<br>
+                    최대의 향과 맛을 즐겨보세요.
+                </p>
+            </div>
+
+            <div class="coffee_single_list"></div>
+
+            <div class="banner_special up-on-scroll">
+              <H2>에뜨왈 스페셜티 커피</H2>
+            </div>
+
+            <div class="coffee_special_list"></div>
+
+            <div class="yeca_area">
+                <div class="banner_400g">
+                    <h1>에뜨왈 200g + 200g 지퍼백 원두커피</h1>
+                    <h3>가정에서 신선하게 소비하기 좋은 소량 원두커피
+                    </h3>
+                </div>
+                <div class="coffee_list_400"></div>
+                <div class="banner_1kg">
+                    <h1>에뜨왈 500g + 500g 지퍼백 원두커피</h1>
+                    <h3>커피 소비량이 많다면 가성비있게 즐겨보세요.
+                    </h3>
+                </div>
+                <div class="coffee_list_1000"></div>
+            </div>
+        </div>
+
+        <script src="coffee.js"></script>
+        <script src="html2canvas.js"></script>
+    </body>
+</html>

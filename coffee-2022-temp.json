@@ -1,0 +1,5 @@
+[{"no":"선택 01","title":"에스프레소 블랜드","desc":"대중적인 100% 아라비카 중남미 원두를 로스팅하여 단향과 고소함, 마일드함이 매력인 커피. 아주 약간의 산미가 밸런스를 채워줍니다.","taste":"밸런스, 갓 구운 빵, 벨벳 질감","balance":"산미 ★☆ 바디 ★★★☆","price":16000,"flag":"","icon1":"nut.png","icon2":"biscuit.png","icon3":"chocolate.png","isBest":""},
+  {"no":"선택 02","title":"콜롬비아 수프리모","desc":"대표적인 마일드커피로 부드럽고 크리미한 바디감과 적절한 산미, 캐러멜, 흑설탕이 연상되는 단향을 가졌습니다.","taste":"캐러멜, 마일드, 단향","balance":"산미 ★★ 바디 ★★☆","price":17000,"flag":"flag_colombia.jpg","icon1":"sugar.png","icon2":"caramel.png","icon3":"apple.png","isBest":"Y"},
+  {"no":"선택 03","title":"과테말라 안티구아","desc":"어두운 톤의 단향과 스모키함이 매력적인 커피. 에스프레소나 모카포트로 추출시 단향과 스모키향이 잘 살아나며 핸드드립시는 단향과 산미를 즐길수 있습니다.","taste":"카카오의 단향, 스모키, 기분좋은 바디","balance":"산미 ★★ 바디 ★★★","price":17000,"flag":"flag_guatemala.jpg","icon1":"cacao.png","icon2":"vanilla.png","icon3":"chocolate.png","isBest":""},
+  {"no":"선택 04","title":"안도네시아 만데링","desc":"고소하고 어두운 톤의 단향, 중남미 커피의 부드라움을 넘어서는 강한 농도와 강한 바디","taste":"고소함, 흙내음, 오리엔탈 허브","balance":"산미 ★ 바디 ★★★☆","price":17000,"flag":"flag_indonesia.jpg","icon1":"nut.png","icon2":"cacao.png","icon3":"herb.png","isBest":""}
+]

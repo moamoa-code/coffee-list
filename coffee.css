@@ -1,0 +1,482 @@
+body{
+    width: 900px;
+    margin: 0 auto;
+}
+
+.setting{
+  box-sizing: border-box;
+  width: 540px;
+  padding: 30px 50px 30px 50px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  color: white;
+  background-color: #1f2d39;
+  border-radius: 12px;
+  box-shadow: 0px 9px 10px -4px rgba(0,0,0,0.1);
+}
+.setting h1{
+  text-align: center;
+  margin: 0 0 20px 0;
+  font-weight: 100;
+  padding: 5px;
+  font-size: 18pt;
+  border-bottom: 1px solid white;
+}
+.setting h2{
+  font-size: 14pt;
+  font-weight: 100;
+  margin: 22px 0 10px 0;
+}
+.setting .flexBox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.setting span{
+  margin: 22px 0 10px 0;
+  display: block;
+  font-size: 11pt;
+}
+
+button {
+  padding: 8px 12px 8px 12px;
+  display:inline-block;
+  font-size: 12pt;
+  background-color: #13b289;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.hide{
+    display: none;
+}
+
+/* 스크롤시 나타나는 애니메이션 */
+.up-on-scroll{
+    transition: transform 0.7s, opacity 1s;
+}
+
+/* 사진 클릭시 나오는 큰 사진 팝업 */
+.image_view{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    z-index: 1;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+.show{
+    display: flex; 
+}
+
+.image_view .container{
+    width: 600px;
+    height: 400px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+}
+
+.image_view .container img{
+    width: 600px;
+    height: 400px;
+}
+
+.banner_special{
+  margin: 10px;
+}
+.banner_special h2{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.banner_blend{
+    width: 900px;
+    height: 480px;
+    box-sizing: border-box;
+    background-image: url('imgs/banner_blend.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 20px;
+}
+.banner_blend h1, h3{
+    font-family: 'Noto Sans KR', sans-serif;
+    /* background-color: #ffffff42; */
+    padding: 10px;
+    margin: 0px;
+}
+.banner_blend h3{
+    font-weight: 400;
+}
+.banner_single{
+    width: 900px;
+    height: 260px;
+    box-sizing: border-box;
+    background-image: url('imgs/banner_single.jpg');
+    text-align: right;
+    padding: 50px 0;
+    margin-bottom: 20px;
+}
+
+.banner_single h1, p{
+    margin: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.banner_400g{
+    width: 780px;
+    height: 390px;
+    box-sizing: border-box;
+    background-image: url('imgs/banner_blend.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 20px;
+    display: none;
+}
+.banner_400g h1, h3{
+    font-family: 'Noto Sans KR', sans-serif;
+    /* background-color: #ffffff42; */
+    padding: 10px;
+    margin: 0px;
+}
+.banner_400g h3{
+    font-weight: 400;
+}
+
+
+.banner_1kg{
+    width: 780px;
+    height: 390px;
+    box-sizing: border-box;
+    background-image: url('imgs/1kg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 20px;
+    display: none;
+}
+.banner_1kg h1, h3{
+    font-family: 'Noto Sans KR', sans-serif;
+    /* background-color: #ffffff42; */
+    padding: 10px;
+    margin: 0px;
+}
+.banner_1kg h3{
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 2px 2px 2px gray;
+}
+
+.coffee_list{
+    width: 900px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.coffee_single_list{
+    width: 900px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.coffee_container {
+    padding: 0px;
+    box-sizing: border-box;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+/* 구분선 */
+hr{
+    width: 860px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-top: 1px dotted #bebebe;
+}
+.line{
+    text-align: center;
+    width: 100%;
+}
+.line_inner{
+    border-top:2px dotted #bebebe;
+    box-sizing: border-box;
+    width: 95%;
+    height: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+/* 좌측 컨테이너 */
+.left_container{
+    float:left;
+    width:250px;
+    margin-bottom: 10px;
+    box-sizing:border-box;
+}
+
+/* 오른쪽 컨테이너 */
+.contents_container{
+    width:650px;
+    box-sizing:border-box;
+    padding: 0px 0px 0px 15px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.img_box{
+    margin-top: 5px;
+    width:250px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.img_box img{
+    width:250px;
+    height:167px;
+}
+
+.roasting_box{
+    float: left;
+    margin:10px 0px 0px 5px;
+}
+
+.roasting{
+    display: block;
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16pt;
+    line-height: 16pt;
+    font-weight: 600;
+}
+
+.roastingTag{
+    display: block;
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14pt;
+    line-height: 15pt;
+    font-weight: 400;
+}
+
+.strTag{
+    float: right;
+    font-size: 11pt;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 18px;
+}
+.str_box{
+    float: right;
+    background-color: #0b3749;
+    border-radius: 75%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    vertical-align:middle;
+    line-height: 40px;
+    margin: 10px 5px 5px 5px;
+
+}
+
+.str{
+    margin: 5px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20pt;
+    color: white;
+    font-weight: 600;
+}
+
+.title_container{
+    margin: 10px 10px 0px 10px;
+}
+
+.yecaNumber{
+    font-size: 17pt;
+    font-weight: 600;
+    vertical-align:middle;
+}
+
+.number{
+    display: inline;
+    color:white;
+    font-size: 22pt;
+    font-weight: 600;
+}
+
+.number_box{
+    display: inline-block;
+    background-color: #58453a;
+    border-radius: 10px;
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    vertical-align:middle;
+    line-height: 40px;
+    box-sizing: border-box;
+}
+
+.flag_box{
+    display: inline-block;
+    border-radius: 10px;
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    vertical-align:middle;
+    line-height: 40px;
+    margin-left:10px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.flag_box img{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    width:60px;
+    height:40px;
+}
+
+.title{
+    margin-left: 8px;
+    display: inline;
+    vertical-align:middle;
+    font-size: 18pt;
+    font-weight: 600;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 가격 컨테이너 */
+.price_container{
+    display: none;
+    margin:0px;
+    padding: 0px 10px 5px 0px;
+    text-align: right;
+}
+
+.show_price{
+    display: block;
+}
+
+.freeShipping{
+    text-align: right;
+    font-size: 16pt;
+    font-weight: 600;
+    font-family: 'Noto Sans KR', sans-serif;
+    color:dodgerblue;
+    margin: 0px 2px 0px 2px;
+}
+
+.yeca{
+    text-align: right;
+    font-size: 14pt;
+    font-weight: 600;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: crimson;
+    margin: 0px 5px 0px 5px;
+}
+
+.weight{
+    text-align: right;
+    font-size: 18pt;
+    font-weight: 600;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0px 5px 0px 5px;
+}
+
+.price{
+    text-align: right;
+    font-size: 30pt;
+    font-weight: 600;
+    color: crimson;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.krw{
+    text-align: right;
+    font-size: 14pt;
+    font-weight: 600;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 커피 설명 */
+.desc{
+    display: block;
+    margin: 10px 10px 5px 10px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 13pt;
+    font-weight: 400;
+}
+
+/* 테이스트 노트 */
+.taste{
+    padding: 0px;
+    margin: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16pt;
+    font-weight: 500;
+}
+
+.graph_container{
+    display: inline-block;
+    vertical-align:middle;
+    margin-left: 5px;
+}
+
+.acid, .bodies{
+    display: inline;
+    margin: 5px 0px 5px 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 22pt;
+    font-weight: 500;
+    vertical-align:middle;
+}
+
+.acid_graph{
+    display: block;
+    font-size: 1pt;
+    font-weight: 500;
+    color:#ff803b;
+    transform: scaleY(2.5);
+    margin-bottom: 0px;
+}
+
+.bodies_graph{
+    display: block;
+    font-size: 1pt;
+    font-weight: 500;
+    color:#462911;
+    transform: scaleY(2.5);
+    margin-bottom: 4px;
+}
+.acidTag, .bodiesTag{
+    padding: 0px;
+    display: inline-block;
+    font-size:13pt;
+    vertical-align:middle;
+    margin: 0;
+    margin-left: 10px;
+}
+.outOfTen{
+    display: inline-block;
+    font-size:11pt;
+    vertical-align:bottom;
+    margin: 0;
+    margin-bottom: 4px;
+
+}
